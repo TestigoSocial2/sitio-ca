@@ -119,6 +119,7 @@ ul.icons {
 
     li {
       border-left: 1px solid $a-white;
+      color: $a-white;
       cursor: pointer;
       float: left;
       padding: 0 20px;
@@ -126,6 +127,7 @@ ul.icons {
 
     a {
       color: $a-white;
+      padding: 0 10px;
     }
   }
 }

@@ -2,3 +2,4 @@ vendor/**
 .DS_Store
 .sass-cache
 glide.lock
+sitio-ca
