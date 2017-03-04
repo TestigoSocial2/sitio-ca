@@ -1,0 +1,16 @@
+[Unit]
+Description=Sitio oficial de la alianza para las Contrataciones Abiertas
+Documentation=https://github.com/transparenciamx/sitio-ca
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+RestartSec=5
+TimeoutStartSec=0
+KillMode=none
+ExecStartPre=-/usr/bin/docker kill sitio-ca
+ExecStartPre=-/usr/bin/docker rm sitio-ca
+ExecStartPre=-/usr/bin/touch /var/run/tsv-pre-register
+ExecStart=/usr/bin/docker run --name=sitio-ca tm/sitio-ca
+ExecStop=/usr/bin/docker stop sitio-ca

@@ -1,0 +1,19 @@
+[Unit]
+Description=Sitio oficial de la alianza para las Contrataciones Abiertas - Cache
+Documentation=https://github.com/transparenciamx/sitio-ca
+Requires=sitio-ca.service
+After=sitio-ca.service
+
+[Service]
+Restart=always
+RestartSec=5
+TimeoutStartSec=0
+KillMode=none
+
+ExecStartPre=-/usr/bin/docker kill sitio-ca-cache
+ExecStartPre=-/usr/bin/docker rm sitio-ca-cache
+ExecStart=/usr/bin/docker run \
+  --name=sitio-ca-cache \
+  --link sitio-ca:backend \
+  -p 80:6081 mxabierto/varnish
+ExecStop=/usr/bin/docker stop sitio-ca-cache
