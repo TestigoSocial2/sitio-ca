@@ -27,6 +27,41 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  color: $a-green;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+  padding-left: 36px;
+  text-transform: uppercase;
+
+  &.planning {
+    background: url('../images/icon_planning.png') no-repeat center left;
+    background-size: contain;
+  }
+
+  &.tender {
+    background: url('../images/icon_tender.png') no-repeat center left;
+    background-size: contain;
+  }
+
+  &.award {
+    background: url('../images/icon_award.png') no-repeat center left;
+    background-size: contain;
+  }
+
+  &.contract {
+    background: url('../images/icon_contract.png') no-repeat center left;
+    background-size: contain;
+  }
+
+  &.implementation {
+    background: url('../images/icon_implementation.png') no-repeat center left;
+    background-size: contain;
+  }
+}
+
 .txt-centered {
   text-align: center;
 }
@@ -40,7 +75,7 @@ ul.icons {
   }
 
   &.ally {
-    width: 320px;
+    width: 610px;
   }
 
   &.collaborators {
@@ -94,8 +129,29 @@ ul.icons {
       &.ocds {
         background-image: url('../images/icon_ocds.png');
       }
+
+      &.cce {
+        background-image: url('../images/icon_cce.png');
+      }
+
+      &.cmic {
+        background-image: url('../images/icon_cmic.png');
+      }
     }
   }
+}
+
+a.btn {
+  background-color: $a-green;
+  border-radius: 30px;
+  box-shadow: 0px 2px 1px rgba(0,0,0,0.6);
+  color: $a-white;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 320px;
 }
 
 #top {
@@ -133,12 +189,14 @@ ul.icons {
 }
 
 #logo {
+  background: url('../images/bg.png') repeat top left;
+
   a {
     background: url('../images/logo.png') no-repeat top left;
     background-size: contain;
     display: block;
     height: 140px;
-    margin: 40px auto 20px;
+    margin: 60px auto;
     width: 500px;
   }
 }
@@ -158,18 +216,5 @@ ul.icons {
   p {
     line-height: 1.6em;
     margin-bottom: 30px;
-  }
-
-  a.btn {
-    background-color: $a-green;
-    border-radius: 30px;
-    box-shadow: 0px 2px 1px rgba(0,0,0,0.6);
-    color: $a-white;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 0;
-    text-align: center;
-    text-transform: uppercase;
-    width: 320px;
   }
 }

@@ -16,6 +16,30 @@ h2 {
   margin-bottom: 30px;
   text-transform: uppercase; }
 
+h3 {
+  color: #0c9;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+  padding-left: 36px;
+  text-transform: uppercase; }
+  h3.planning {
+    background: url("../images/icon_planning.png") no-repeat center left;
+    background-size: contain; }
+  h3.tender {
+    background: url("../images/icon_tender.png") no-repeat center left;
+    background-size: contain; }
+  h3.award {
+    background: url("../images/icon_award.png") no-repeat center left;
+    background-size: contain; }
+  h3.contract {
+    background: url("../images/icon_contract.png") no-repeat center left;
+    background-size: contain; }
+  h3.implementation {
+    background: url("../images/icon_implementation.png") no-repeat center left;
+    background-size: contain; }
+
 .txt-centered {
   text-align: center; }
 
@@ -25,7 +49,7 @@ ul.icons {
   ul.icons.partners {
     width: 750px; }
   ul.icons.ally {
-    width: 320px; }
+    width: 610px; }
   ul.icons.collaborators {
     width: 320px; }
   ul.icons li {
@@ -56,6 +80,22 @@ ul.icons {
         background-image: url("../images/icon_wb.png"); }
       ul.icons li a.ocds {
         background-image: url("../images/icon_ocds.png"); }
+      ul.icons li a.cce {
+        background-image: url("../images/icon_cce.png"); }
+      ul.icons li a.cmic {
+        background-image: url("../images/icon_cmic.png"); }
+
+a.btn {
+  background-color: #0c9;
+  border-radius: 30px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 320px; }
 
 #top {
   background-color: #17223a;
@@ -82,13 +122,15 @@ ul.icons {
       color: #fff;
       padding: 0 10px; }
 
-#logo a {
-  background: url("../images/logo.png") no-repeat top left;
-  background-size: contain;
-  display: block;
-  height: 140px;
-  margin: 40px auto 20px;
-  width: 500px; }
+#logo {
+  background: url("../images/bg.png") repeat top left; }
+  #logo a {
+    background: url("../images/logo.png") no-repeat top left;
+    background-size: contain;
+    display: block;
+    height: 140px;
+    margin: 60px auto;
+    width: 500px; }
 
 #slogan h1 {
   color: #545454;
@@ -101,16 +143,5 @@ ul.icons {
 #data p {
   line-height: 1.6em;
   margin-bottom: 30px; }
-#data a.btn {
-  background-color: #0c9;
-  border-radius: 30px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.6);
-  color: #fff;
-  display: block;
-  margin: 20px auto;
-  padding: 10px 0;
-  text-align: center;
-  text-transform: uppercase;
-  width: 320px; }
 
 /*# sourceMappingURL=alianza.css.map */
