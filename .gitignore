@@ -3,4 +3,4 @@ vendor/**
 .sass-cache
 glide.lock
 sitio-ca
-.tar.gz
+*.tar.gz
