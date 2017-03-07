@@ -52,7 +52,7 @@ ul.icons {
   ul.icons.partners {
     width: 750px; }
   ul.icons.ally {
-    width: 610px; }
+    width: 220px; }
   ul.icons.collaborators {
     width: 320px; }
   ul.icons li {
@@ -142,7 +142,7 @@ a.btn {
 
 #data li {
   line-height: 1.6em;
-  padding: 14px; }
+  padding: 0 0 20px; }
 #data p {
   line-height: 1.6em;
   margin-bottom: 30px; }
