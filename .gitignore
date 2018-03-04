@@ -4,3 +4,4 @@ vendor/**
 glide.lock
 sitio-ca
 *.tar.gz
+.idea

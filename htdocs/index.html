@@ -9,8 +9,6 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/alianza.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -62,7 +60,43 @@
             <p>Tomando como base este estándar, una coalición integrada por el Banco Mundial, el INAI, la Oficina de la Presidencia de la República y Transparencia Mexicana, lo han adaptado para su uso en México. Cualquier ente gubernamental federal, estatal o municipal, así como los poderes legislativo y judicial, puede adoptarlo.</p>
           </div>
           <div class="col-md-12">
-            <a class="btn" href="#">Conoce cómo implementar el EDCA</a>
+            <a class="btn" id="showFiles" href="#">Conoce cómo implementar el EDCA</a>
+            <div id="filesList" class="col-md-6 col-md-offset-3">
+              <table class="table table-striped">
+                <thead>
+                <tr>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Descarga</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Traducción oficial del estándar</td>
+                    <td><a href="https://tm.org.mx.s3.amazonaws.com/EDCA%20-MX.pdf">PDF</a></td>
+                  </tr>
+                  <tr>
+                    <td>Formato de carta de postulación para entidades de gobierno</td>
+                    <td><a href="https://tm.org.mx.s3.amazonaws.com/Carta%20-%20Gobierno.pdf">PDF</a></td>
+                  </tr>
+                  <tr>
+                    <td>Formato de carta de postulación para entidades de la sociedad civil y organismos empresariales</td>
+                    <td><a href="https://tm.org.mx.s3.amazonaws.com/Carta%20-%20Civil.pdf">PDF</a></td>
+                  </tr>
+                  <tr>
+                    <td>Formato de plan de trabajo</td>
+                    <td><a href="https://tm.org.mx.s3.amazonaws.com/Plan%20de%20trabajo.pdf">PDF</a></td>
+                  </tr>
+                  <tr>
+                    <td>Guía de Adhesión para las contrataciones abiertas en México</td>
+                    <td><a href="https://tm.org.mx.s3.amazonaws.com/Guia%20de%20Adhesion.pdf">PDF</a></td>
+                  </tr>
+                  <tr>
+                    <td>Reglas de Operación de la Alianza</td>
+                    <td><a href="https://tm.org.mx.s3.amazonaws.com/Reglas%20de%20Operacion%20de%20la%20Alianza.pdf">PDF</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -172,9 +206,9 @@
           </div>
         </div>
       </div>
-
       <hr />
-
     </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>
