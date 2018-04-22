@@ -1,13 +1,9 @@
-FROM scratch
+FROM nginx:1.13.8
 
-MAINTAINER bcessa <ben@pixative.com>
+COPY htdocs /usr/share/nginx/html
 
-ADD ca-certificates.crt /etc/ssl/certs/ca-certificates
+COPY nginx.conf /etc/nginx/nginx.conf
 
-ADD htdocs /var/www/htdocs
+COPY cert.pem /etc/nginx/cert.pem
 
-ADD sitio-ca /
-
-EXPOSE 8888
-
-ENTRYPOINT ["/sitio-ca"]
+COPY key.priv /etc/nginx/key.priv

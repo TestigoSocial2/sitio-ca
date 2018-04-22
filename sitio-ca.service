@@ -11,6 +11,8 @@ TimeoutStartSec=0
 KillMode=none
 ExecStartPre=-/usr/bin/docker kill sitio-ca
 ExecStartPre=-/usr/bin/docker rm sitio-ca
-ExecStartPre=-/usr/bin/touch /var/run/tsv-pre-register
-ExecStart=/usr/bin/docker run --name=sitio-ca tm/sitio-ca
+ExecStart=/usr/bin/docker run \
+  -p 80:80 \
+  -p 443:443 \
+  --name=sitio-ca tm/sitio-ca:0.2.0
 ExecStop=/usr/bin/docker stop sitio-ca
